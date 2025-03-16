@@ -228,3 +228,6 @@ git log --oneline --reverse
 git rebase -i --root
 git status
 git add .
+git rebase -i --root
+git status
+git add .freeCodeCamp/test/.cwd .freeCodeCamp/test/.next_command
