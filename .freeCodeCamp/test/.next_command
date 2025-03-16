@@ -1,0 +1,177 @@
+builtin unset VSCODE_INJECTION
+[ -z "$VSCODE_SHELL_INTEGRATION" ]
+[ -n "${VSCODE_ENV_REPLACE:-}" ]
+[ -n "${VSCODE_ENV_PREPEND:-}" ]
+[ -n "${VSCODE_ENV_APPEND:-}" ]
+__vsc_regex_environment="^CYGWIN*|MINGW*|MSYS*"
+[[ "$(uname -s)" =~ $__vsc_regex_environment ]]
+__vsc_is_windows=0
+__vsc_regex_histcontrol=".*(erasedups|ignoreboth|ignoredups).*"
+[[ "$HISTCONTROL" =~ $__vsc_regex_histcontrol ]]
+__vsc_history_verify=1
+builtin unset __vsc_regex_environment
+builtin unset __vsc_regex_histcontrol
+__vsc_initialized=0
+__vsc_original_PS1="$PS1"
+__vsc_original_PS2="$PS2"
+__vsc_custom_PS1=""
+__vsc_custom_PS2=""
+__vsc_in_command_execution="1"
+__vsc_current_command=""
+__vsc_nonce="$VSCODE_NONCE"
+unset VSCODE_NONCE
+__vsc_stable="$VSCODE_STABLE"
+unset VSCODE_STABLE
+[ "$__vsc_stable" = "0" ]
+[[ -n "${bash_preexec_imported:-}" ]]
+__vsc_dbg_trap="$(__vsc_get_trap DEBUG)"
+[[ -z "$__vsc_dbg_trap" ]]
+[[ "$__vsc_dbg_trap" != '__vsc_preexec "$_"' && "$__vsc_dbg_trap" != '__vsc_preexec_all "$_"' ]]
+trap '__vsc_preexec_all "$_"' DEBUG
+__vsc_original_prompt_command=${PROMPT_COMMAND:-}
+psql --username=freecodecamp --dbname=periodic_table
+touch element.sh
+mkdir periodic_table
+__vsc_prompt_cmd_original
+__vsc_prompt_cmd_original
+__vsc_prompt_cmd_original
+__vsc_prompt_cmd_original
+__vsc_prompt_cmd_original
+__vsc_prompt_cmd_original
+__vsc_prompt_cmd_original
+__vsc_prompt_cmd_original
+__vsc_prompt_cmd_original
+__vsc_prompt_cmd_original
+__vsc_prompt_cmd_original
+__vsc_prompt_cmd_original
+__vsc_prompt_cmd_original
+__vsc_prompt_cmd_original
+__vsc_prompt_cmd_original
+__vsc_prompt_cmd_original
+__vsc_prompt_cmd_original
+__vsc_prompt_cmd_original
+__vsc_prompt_cmd_original
+__vsc_prompt_cmd_original
+__vsc_prompt_cmd_original
+__vsc_prompt_cmd_original
+__vsc_prompt_cmd_original
+__vsc_prompt_cmd_original
+__vsc_prompt_cmd_original
+__vsc_prompt_cmd_original
+__vsc_prompt_cmd_original
+__vsc_prompt_cmd_original
+__vsc_prompt_cmd_original
+__vsc_prompt_cmd_original
+__vsc_prompt_cmd_original
+__vsc_prompt_cmd_original
+__vsc_prompt_cmd_original
+__vsc_prompt_cmd_original
+git add element.sh
+ls --color=auto -l element.sh
+touch element.sh
+git add element.sh
+mv /path/to/element.sh /periodic_table/
+ls --color=auto -l
+touch element.sh
+chmod +x element.sh
+pwd
+git add element.sh
+psql --username=freecodecamp --dbname=periodic_table
+psql --username=freecodecamp --dbname=periodic_table
+git branch
+git branch
+git branch -m master main
+git push origin --delete master
+git push -u origin main
+git remote -v
+git remote add origin https://github.com/sunquakes16/periodic_table.git
+git remote -v
+git push -u origin main
+git pull origin main --rebase
+git add .
+git status
+git pull origin main --rebase
+git add .
+git push -u origin main
+git push --force origin main
+git log --oneline
+echo "# Periodic Table Project" >> README.md
+git add README.md
+git commit -m "chore: add README file"
+git push origin main
+git log --oneline
+echo "# This is a script to retrieve element info" >> element.sh
+git add element.sh
+git commit -m "chore: add comment to element.sh script"
+git push origin main
+git log --oneline --reverse
+git rebase -i --root
+builtin unset VSCODE_INJECTION
+[ -z "$VSCODE_SHELL_INTEGRATION" ]
+[ -n "${VSCODE_ENV_REPLACE:-}" ]
+[ -n "${VSCODE_ENV_PREPEND:-}" ]
+[ -n "${VSCODE_ENV_APPEND:-}" ]
+__vsc_regex_environment="^CYGWIN*|MINGW*|MSYS*"
+[[ "$(uname -s)" =~ $__vsc_regex_environment ]]
+__vsc_is_windows=0
+__vsc_regex_histcontrol=".*(erasedups|ignoreboth|ignoredups).*"
+[[ "$HISTCONTROL" =~ $__vsc_regex_histcontrol ]]
+__vsc_history_verify=1
+builtin unset __vsc_regex_environment
+builtin unset __vsc_regex_histcontrol
+__vsc_initialized=0
+__vsc_original_PS1="$PS1"
+__vsc_original_PS2="$PS2"
+__vsc_custom_PS1=""
+__vsc_custom_PS2=""
+__vsc_in_command_execution="1"
+__vsc_current_command=""
+__vsc_nonce="$VSCODE_NONCE"
+unset VSCODE_NONCE
+__vsc_stable="$VSCODE_STABLE"
+unset VSCODE_STABLE
+[ "$__vsc_stable" = "0" ]
+[[ -n "${bash_preexec_imported:-}" ]]
+__vsc_dbg_trap="$(__vsc_get_trap DEBUG)"
+[[ -z "$__vsc_dbg_trap" ]]
+[[ "$__vsc_dbg_trap" != '__vsc_preexec "$_"' && "$__vsc_dbg_trap" != '__vsc_preexec_all "$_"' ]]
+trap '__vsc_preexec_all "$_"' DEBUG
+__vsc_original_prompt_command=${PROMPT_COMMAND:-}
+git commit --amend -m "Initial commit"
+git log --oneline --reverse
+builtin unset VSCODE_INJECTION
+[ -z "$VSCODE_SHELL_INTEGRATION" ]
+[ -n "${VSCODE_ENV_REPLACE:-}" ]
+[ -n "${VSCODE_ENV_PREPEND:-}" ]
+[ -n "${VSCODE_ENV_APPEND:-}" ]
+__vsc_regex_environment="^CYGWIN*|MINGW*|MSYS*"
+[[ "$(uname -s)" =~ $__vsc_regex_environment ]]
+__vsc_is_windows=0
+__vsc_regex_histcontrol=".*(erasedups|ignoreboth|ignoredups).*"
+[[ "$HISTCONTROL" =~ $__vsc_regex_histcontrol ]]
+__vsc_history_verify=1
+builtin unset __vsc_regex_environment
+builtin unset __vsc_regex_histcontrol
+__vsc_initialized=0
+__vsc_original_PS1="$PS1"
+__vsc_original_PS2="$PS2"
+__vsc_custom_PS1=""
+__vsc_custom_PS2=""
+__vsc_in_command_execution="1"
+__vsc_current_command=""
+__vsc_nonce="$VSCODE_NONCE"
+unset VSCODE_NONCE
+__vsc_stable="$VSCODE_STABLE"
+unset VSCODE_STABLE
+[ "$__vsc_stable" = "0" ]
+[[ -n "${bash_preexec_imported:-}" ]]
+__vsc_dbg_trap="$(__vsc_get_trap DEBUG)"
+[[ -z "$__vsc_dbg_trap" ]]
+[[ "$__vsc_dbg_trap" != '__vsc_preexec "$_"' && "$__vsc_dbg_trap" != '__vsc_preexec_all "$_"' ]]
+trap '__vsc_preexec_all "$_"' DEBUG
+__vsc_original_prompt_command=${PROMPT_COMMAND:-}
+git rebase -i --root
+git rebase -i --root
+git rebase -i --root
+git status
+git add .
