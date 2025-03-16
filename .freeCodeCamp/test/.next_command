@@ -175,3 +175,5 @@ git rebase -i --root
 git rebase -i --root
 git status
 git add .
+__vsc_prompt_cmd_original
+git add .
