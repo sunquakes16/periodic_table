@@ -270,3 +270,7 @@ git add .
 git stash pop
 git status
 git add .
+git stash pop
+git rebase --continue
+git status
+git add .
